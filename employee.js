@@ -9,11 +9,11 @@ async function addEmployee(){
     console.log("\n Add Employee Details");
     console.log("-------------------");
 
-    const name = await askRequired("Enter name: ");
+    const name = await askRequired("Enter name: " , "Name");
     const age = await askAge();
-    const city = await askRequired("Enter city: ");
-    const state = await askRequired("Enter state: ");
-    const country = await askRequired("Enter country: ");
+    const city = await askRequired("Enter city: ", "City");
+    const state = await askRequired("Enter state: " , "State");
+    const country = await askRequired("Enter country: " , "Country");
 
     const id = getNextId(fileName);
     addRow(fileName,headers,[id,name,age,city,state,country]);

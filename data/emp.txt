@@ -1,6 +1,9 @@
-+----+------+-----------+-------------+------------+-----------+
-| ID | Name | Age       | City        | State      | Country   |
-+----+------+-----------+-------------+------------+-----------+
-| 1  | Rosa | 21        | Thoothukudi | Tamil Nadu | India     |
-| 2  | jose | 45        | thoothukudi | tamil nadu | india     |
-+----+------+-----------+-------------+------------+-----------+
++----+------+-----+-------------+------------+---------+
+| ID | Name | Age | City        | State      | Country |
++----+------+-----+-------------+------------+---------+
+| 1  | Rosa | 21  | Thoothukudi | Tamil Nadu | India   |
+| 2  | jose | 45  | thoothukudi | tamil nadu | india   |
+| 3  | bbb  | 32  | Thoothukudi | tamil nadu | india   |
+| 4  | aaa  | 24  | tuty        | tn         | india   |
+| 5  | ccc  | 32  | tuty        | tn         | india   |
++----+------+-----+-------------+------------+---------+
