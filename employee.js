@@ -1,5 +1,5 @@
 const path = require("path");
-const { askRequired, askAge}= require("./helpers");
+const { askRequired, askAge, askText}= require("./helpers");
 const {addRow, getNextId}=require("./fileHelpers");
 
 const fileName = path.join(__dirname, "data", "emp.txt");
@@ -9,11 +9,11 @@ async function addEmployee(){
     console.log("\n Add Employee Details");
     console.log("-------------------");
 
-    const name = await askRequired("Enter name: " , "Name");
+    const name = await askText("Enter name: " , "Name");
     const age = await askAge();
-    const city = await askRequired("Enter city: ", "City");
-    const state = await askRequired("Enter state: " , "State");
-    const country = await askRequired("Enter country: " , "Country");
+    const city = await askText("Enter city: ", "City");
+    const state = await askText("Enter state: " , "State");
+    const country = await askText("Enter country: " , "Country");
 
     const id = getNextId(fileName);
     addRow(fileName,headers,[id,name,age,city,state,country]);

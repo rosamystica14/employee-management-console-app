@@ -62,4 +62,4 @@ function getNextId(fileName){
     }
     return maxId+1;
 }
-module.exports={readTable, addRow, getNextId};
+module.exports={readTable, writeTable, addRow, getNextId};

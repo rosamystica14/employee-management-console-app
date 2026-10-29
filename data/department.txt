@@ -1,0 +1,9 @@
++----+------------------------+
+| ID | Description            |
++----+------------------------+
+| 1  | backend developer      |
+| 2  | Front end developer    |
+| 3  | Database administrator |
+| 4  | sql developer          |
+| 5  | AI Architect           |
++----+------------------------+
