@@ -2,6 +2,7 @@ const {askQuestion,rl}=require("./helpers");
 const {addEmployee}=require("./employee");
 const { addDepartment } = require("./department");
 const {assignDepartment, changeDepartment} = require("./assignment");
+const {viewByDate, viewByRange}= require("./report");
 async function main(){
     let running = true;
     while(running){
@@ -24,6 +25,12 @@ async function main(){
         }
         else if(choice === "3"){
             await assignDepartment();
+        }
+        else if(choice ==="4"){
+            await viewByDate();
+        }
+        else if(choice ==="5"){
+            await viewByRange();
         }
         else if(choice ==="6"){
             await changeDepartment();
