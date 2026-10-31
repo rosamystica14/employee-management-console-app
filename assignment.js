@@ -1,5 +1,5 @@
 const path = require("path");
-const { askQuestion, askDate, askEndDate } = require("./helpers");
+const { askQuestion, askDate, askEndDate, nameOf } = require("./helpers");
 const { readTable, writeTable, addRow, getNextId } = require("./fileHelpers");
 const { toNumber, isOverlapping } = require("./dateUtils");
 const empFile = path.join(__dirname, "data", "emp.txt");
@@ -34,10 +34,6 @@ async function askEndDateRequired(question, startDate) {
         }
         console.log("End date is required here.");
     }
-}
-
-function nameOf(rows, id) {
-    return rows.find((row) => row[0] === id)[1];
 }
 
 //assign a department

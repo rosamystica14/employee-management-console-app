@@ -81,4 +81,8 @@ async function askEndDate(question, startDate){
         }
     }
 }
-module.exports={askQuestion,askRequired,askText,askAge,askDate,askEndDate,rl};
+function nameOf(rows, id) {
+    const found = rows.find((row) => row[0] === id);
+    return found ? found[1] : "Unknown";
+}
+module.exports={askQuestion,askRequired,askText,askAge,askDate,askEndDate,nameOf,rl};

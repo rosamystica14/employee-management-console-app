@@ -1,7 +1,6 @@
 const path = require("path");
 const {askRequired} = require("./helpers");
 const {addRow , getNextId}= require("./fileHelpers");
-const Module = require("module");
 const fileName = path.join(__dirname, "data","department.txt");
 const headers = ["ID","Description"];
 async function addDepartment(){

@@ -1,16 +1,11 @@
 const path = require("path");
-const { askDate, askEndDate } = require("./helpers");
+const { askDate, askEndDate, nameOf } = require("./helpers");
 const { readTable } = require("./fileHelpers");
 const { toNumber, isOverlapping } = require("./dateUtils");
 
 const empFile = path.join(__dirname, "data", "emp.txt");
 const deptFile = path.join(__dirname, "data", "department.txt");
 const assignFile = path.join(__dirname, "data", "assignment.txt");
-
-function nameOf(rows, id) {
-    const found = rows.find((row) => row[0] === id);
-    return found ? found[1] : "Unknown";
-}
 
 function printRows(headers, rows) {
     const widths = headers.map((h, i) => {
