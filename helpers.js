@@ -18,8 +18,8 @@ async function askRequired(question, label){
         const answer = await askQuestion(question);
         if(answer===""){
             console.log(label+" is required.");
-        }else if(answer.includes("|")){
-            console.log("The character | is not allowed.");
+        }else if(answer.includes(",")){
+            console.log("The character , is not allowed.");
         }else{
             return answer;
         }
